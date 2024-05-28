@@ -1,18 +1,39 @@
-<!DOCTYPE HTML>
-<meta charset="UTF-8">
-<html xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 뉴스 데이터 센터</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
 <body>
+
 <div class="container">
-    <div>
-        <h1>Hello Spring</h1>
-        <button onclick="performAction()">컨트롤러 호출 test</button>
-    </div>
+    <h1>네이버 경제 증권 뉴스 데이터 센터</h1>
+    <label for="startDate">시작일 </label>
+    <input type="text" id="startDate" readonly>
+    <br>
+    <label for="endDate">종료일 </label>
+    <input type="text" id="endDate" readonly>
+    <br><br>
+    <label for="option1">대분류 </label>
+    <select id="option1">
+        <option value="정치">정치</option>
+        <option value="경제">경제</option>
+    </select>
+    <br><br>
+    <label for="option2">소분류 </label>
+    <select id="option2">
+
+    </select>
+    <br><br>
+    <button id="startCrawling"> 크롤링 시작 </button>
 </div>
-<script>
-    function performAction() {
-        // 여기에 원하는 작업을 수행하는 JavaScript 코드를 추가합니다.
-        alert('버튼 동작 완료');
-    }
-</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
