@@ -11,4 +11,6 @@ public class NewsDTO {
     private String author;
     private String url;
     private String company;
+    private String category1;
+    private String category2;
 }
